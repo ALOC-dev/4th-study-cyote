@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "hate_same_number_programmers",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.StackQueue.hate_same_number_programmers",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "console": "internalConsole"
+        }
+    ]
+}

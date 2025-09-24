@@ -20,14 +20,12 @@ public class exercise_StackQueue {
         q.offer(1);
         q.offer(2);
 
+
         System.out.println("===Stack===");
-        while(!st.isEmpty()){
-            System.out.println(st.pop());
-        }
+        System.out.println(st.peek());
+        System.out.println(st);
 
         System.out.println("===Queue===");
-        while(!q.isEmpty()){
-            System.out.println(q.poll());
-        }
+        System.out.println(q.peek());
     }
 }
