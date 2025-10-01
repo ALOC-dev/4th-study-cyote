@@ -3,6 +3,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaxHeapExercise",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.Heap.MaxHeapExercise",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
+            "name": "exercise",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.Heap.exercise",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.StackQueue.test",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
+            "name": "function_develop_programmers",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.StackQueue.function_develop_programmers",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
             "name": "hate_same_number_programmers",
             "request": "launch",
             "mainClass": "algorithm.juyeong.StackQueue.hate_same_number_programmers",
