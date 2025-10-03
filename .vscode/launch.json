@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "diskController",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.Heap.diskController",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
+            "name": "ObjectHeap_Exercise",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.Heap.ObjectHeap_Exercise",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
             "name": "MaxHeapExercise",
             "request": "launch",
             "mainClass": "algorithm.juyeong.Heap.MaxHeapExercise",
