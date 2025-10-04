@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "dualPriorityQueue",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.Heap.dualPriorityQueue",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
+            "name": "scovile_programmers",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.Heap.scovile_programmers",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
             "name": "diskController",
             "request": "launch",
             "mainClass": "algorithm.juyeong.Heap.diskController",
