@@ -1,40 +1,49 @@
 package algorithm.juyeong.StackQueue;
 import java.util.*;
 
-    // - count를 올려가며, 진행한다.
-    // - i를 1 증가시키며 progress[i]≥count*speed[i] 가 될때까지 반복하고,
-    // - 만약 조건이 만족하면
-    // - combo값을 올린다.
-    // - combo가 끊키면, 해당값을 stack에 넣고, 출력한다.
-
 public class function_develop_programmers {
     public static void main(String args[]){
+        int[] answer = {};
 
         int[] progresses = {93, 30, 55};
         int[] speeds = {1, 30, 5};
 
-        int size = progresses.length;
-        int[] need = new int[size];
-        // 각 작업별 필요한 날짜 계산
-        for(int i=0;i<size;i++){
-            int remain = 100-progresses[i]; // 7
-            need[i] = (remain + speeds[i]-1)/speeds[i]; //7/1 = 7
+        Queue<int[]> progressQueue = new LinkedList<>();
+        ArrayList<Integer> answerList = new ArrayList<>();
+
+        for(int i = 0; i <progresses.length; i++){
+            progressQueue.add(new int[] {progresses[i],speeds[i]});
         }
 
-        List<Integer> out = new ArrayList<>();
-        int cur = need[0];
-        int cnt = 1;
+        int time = 1;
+        
 
-        for(int i = 1; i<size; i++){
-            if(need[i]<=cur){
-                cnt++ ;
-            }else{
-                out.add(cnt);
-                cur = need[i];
-                cnt = 1;
+        while(!progressQueue.isEmpty()){ //queue가 비지 않을때까지 반복
+            // 진행 률 , 속도
+            int count = 0;
+            int [] unit = progressQueue.poll();
+            int progress = unit[0];
+            int speed = unit[1];
+            //시간 poll한거 기준 초기화
+            int remainProgress = 100-(progress+time*speed);
+            if(remainProgress>0){   //양수라면, 시간을 맞춰줘야함.
+                if(remainProgress%speed == 0){
+                    time += remainProgress/speed;
+                }else{
+                    time += remainProgress/speed+1;
+                }
             }
-        }
-        out.add(cnt);
+            count +=1;
+            while(!progressQueue.isEmpty()){//ProgressQueue가 비지 않고,
+                if(100-(progressQueue.peek()[0]+progressQueue.peek()[1]*time)>0){
+                    break;
+                }
+                progressQueue.poll();
+                count+=1;
+            }
+            answerList.add(count);
 
+        }
+        answer = answerList.stream().mapToInt(Integer::intValue).toArray();
     }
 }
