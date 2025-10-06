@@ -45,5 +45,7 @@ public class function_develop_programmers {
 
         }
         answer = answerList.stream().mapToInt(Integer::intValue).toArray();
+
+        System.out.println(answer);
     }
 }

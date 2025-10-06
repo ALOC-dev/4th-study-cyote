@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "correctParentheses",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.StackQueue.correctParentheses",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
             "name": "dualPriorityQueue",
             "request": "launch",
             "mainClass": "algorithm.juyeong.Heap.dualPriorityQueue",
