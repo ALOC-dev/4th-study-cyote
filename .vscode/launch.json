@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "KthNumber",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.Array.KthNumber",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
+            "name": "truck_programmers",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.StackQueue.truck_programmers",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
             "name": "correctParentheses",
             "request": "launch",
             "mainClass": "algorithm.juyeong.StackQueue.correctParentheses",
