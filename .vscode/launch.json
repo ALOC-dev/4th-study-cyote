@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LargestNumber",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.Array.LargestNumber",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
             "name": "KthNumber",
             "request": "launch",
             "mainClass": "algorithm.juyeong.Array.KthNumber",
