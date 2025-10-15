@@ -22,6 +22,19 @@ import java.util.*;
 
 public class H_index {
     public static void main(String args[]){
+        int[] citations = {0,1,3,5,6}; //0,1,3,5,6 ...  5 - 2 = 3
+        int answer = 0;
+        int length = citations.length;
 
+
+        Arrays.sort(citations); // 0,1,3,5,6
+        for(int i=0; i<length;i++){
+            if(citations[i]>=length-i){
+                answer = length - i;
+                break;
+            }
+        }
+        
+        System.out.println(answer);
     }
 }

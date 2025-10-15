@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "H_index",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.Array.H_index",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
             "name": "LargestNumber",
             "request": "launch",
             "mainClass": "algorithm.juyeong.Array.LargestNumber",
