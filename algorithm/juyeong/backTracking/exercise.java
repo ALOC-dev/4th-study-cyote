@@ -30,4 +30,31 @@ public class exercise{
         dfs(N,M,0);
 
     }
+
+    public static void dfs(int N, int M, int depth){
+        //깊이 만큼 들어왔다면, 출력
+        if(depth ==M){
+            for(int val : arr){
+                System.out.print(val+" ");
+            }
+            System.out.println();
+            return;
+        }
+
+        for(int i=0; i<N; i++){
+            //방문 하지 않았다면
+            if(!visit[i]){
+                visit[i] = true;    //방문 처리하고,
+                arr[depth]=i+1;     //
+                dfs(N,M,depth+1);
+            }
+        }
+    }
+
+
+
+
+
+
+
 }

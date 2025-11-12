@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "programmers86469",
+            "request": "launch",
+            "mainClass": "algorithm.juyeong.backTracking.programmers86469",
+            "projectName": "coyote_4c09bff3"
+        },
+        {
+            "type": "java",
             "name": "H_index",
             "request": "launch",
             "mainClass": "algorithm.juyeong.Array.H_index",
